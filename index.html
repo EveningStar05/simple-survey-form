@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill in the empty fields below.</p>
+        </header>
+    
+        <form id="survey-form">
+            <fieldset>
+                <div class="input-group">
+                    <label for="first-name" id="first-name-label">First Name
+                        <input id="first-name" type="text" placeholder="Enter your first name" required>
+                    </label>
+                    <label for="last-name" id="last-name-label">Name
+                        <input id="last-" type="text" placeholder="Enter your last name" required>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label for="dropdown">
+                        <select id="dropdown" require>
+                            <option value="Please selecr one of the following"></option>
+                            <option value="Female"></option>
+                            <option value="Male"></option>
+                            <option value="Preffered not to say"></option>
+                        </select>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="email" id="email-label">Email
+                        <input id="email" type="email" placeholder="Enter your email" required>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label for="number" id="number-label">Phone Number
+                        <input id="number" type="number" placeholder="Enter your phone number" required>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="" id="">Age Group:
+                    <input type="radio" id="" name="" value=""><br>
+                    <input type="radio" id="" name="" value=""><br><br>
+                </label>
+            </fieldset>
+            <textarea>This is a text area</textarea><br><br>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+</body>
+</html>
