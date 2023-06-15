@@ -1,11 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
     height: 100vh;
     margin: 0;
 }
 
-.header {
+div {
     display: block;
+}
+
+.header {
     text-align: center;
     margin: 0;
     padding: 10px; 
@@ -21,28 +28,37 @@ body {
 
 #survey-form {
     width: 60vw;
-    max-width: 500px;
+    max-width: 600px;
     min-width: 300px;
-    display: block;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
+    background-color: rosybrown;
+}
+
+.input-group {
+    padding: 0.25rem;
+    margin: 10px;
+    align-items: center; 
+}
+
+label {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 label, input, select {
-    display: block;
+    border-radius: 15px;
+    border-style: none;
 }
 
 input, select, textarea {
-    margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    /* margin: 10px 0 0 0; */
     width: 100%;
     min-height: 2em;
 }
 
-.input-group {
-    padding: 10px;
-    display: block;
-}
 
 fieldset {
     border: none;
