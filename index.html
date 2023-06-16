@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="last-name" id="last-name-label">Name
+                    <label for="last-name" id="last-name-label">Last Name
                         <input id="last-" type="text" placeholder="Enter your last name" required>
                     </label>
                 </div>
@@ -33,10 +33,10 @@
                 <div class="input-group">
                     <label for="dropdown">Gender
                         <select id="dropdown" require>
-                            <option value="Please selecr one of the following"></option>
-                            <option value="Female"></option>
-                            <option value="Male"></option>
-                            <option value="Preffered not to say"></option>
+                            <option value="">(Please select one of the following)</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Preffered not to say">Preffered not to say</option>
                         </select>
                     </label>
                 </div>
@@ -53,29 +53,42 @@
                 </div>
             </fieldset>
             <fieldset>
-                <div class="input-group">
-                    <label for="" id="">Age Group
+                <p>Age Group</p>
+                <div class="age-group">
+                    <div class="item-age-group">
                         <label for="">
-                            <input type="radio" id="" name="" value="" class="inline" required>18 - 24
+                            <input type="radio" id="" name="age-group" class="inline" required>18 - 24
                         </label>
+                    </div>
+
+                    <div class="item-age-group">
                         <label for="">
-                            <input type="radio" id="" name="" value="" class="inline" required>25 - 34
+                            <input type="radio" id="" name="age-group" class="inline" required>25 - 34
                         </label>
+                    </div>
+
+                    <div class="item-age-group">
                         <label for="">
-                            <input type="radio" id="" name="" value="" class="inline" required>35 - 44
+                            <input type="radio" id="" name="age-group" class="inline" required>35 - 44
                         </label>
+                    </div>
+
+                    <div class="item-age-group">
                         <label for="">
-                            <input type="radio" id="" name="" value="" class="inline" required>45 - 65
+                            <input type="radio" id="" name="age-group" class="inline" required>45 - 65
                         </label>
+                    </div>
+
+                    <div class="item-age-group">
                         <label for="">
-                            <input type="radio" id="" name="" value="" class="inline" required>65 above.
+                            <input type="radio" id="" name="age-group" class="inline" required>65 above
                         </label>
-                    </label>
+                    </div>
                 </div>
             </fieldset>
             <div class="input-group">
                 <label for="">
-                    Please fill in the text area.
+                    Please enter your address.
                 </label>
                 <textarea>This is a text area</textarea><br><br>
                 <input id="submit" type="submit">

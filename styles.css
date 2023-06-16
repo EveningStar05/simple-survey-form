@@ -32,7 +32,7 @@ div {
     min-width: 300px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rosybrown;
+    background-color: #F4B183;
     padding-bottom: 50px;
 }
 
@@ -48,14 +48,32 @@ div {
     vertical-align: middle;
 }
 
+.age-group {
+    display: flex;
+    justify-content: space-around;
+}
+
 label {
     display: block;
+}
+
+fieldset:nth-child(2) > p {
+    background-color: #FFD966;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 0;
+}
+
+
+label, p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
 
 label, input, select {
-    border-radius: 15px;
+    border-radius: 0.25rem;
     border-style: none;
 }
 
@@ -75,4 +93,14 @@ textarea {
 fieldset {
     border: none;
     padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: #FFD966;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF8551;
+    color: #FFD966;
 }
