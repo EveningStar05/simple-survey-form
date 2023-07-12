@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -9,91 +9,103 @@
 </head>
 
 <body>
-
     <div class="container">
         <header class="header">
             <h1 id="title">Survey Form</h1>
             <p id="description">Please fill in the empty fields below.</p>
         </header>
-    
+        
         <form id="survey-form">
             <fieldset>
                 <div class="input-group">
                     <label for="first-name" id="first-name-label">First Name
-                        <input id="first-name" type="text" placeholder="Enter your first name" required>
+                        <input id="first-name" name="first-name" type="text" placeholder="Enter your first name" >
                     </label>
+                    <p class="error-message" aria-live="polite"></p>
                 </div>
-
+                
                 <div class="input-group">
                     <label for="last-name" id="last-name-label">Last Name
-                        <input id="last-" type="text" placeholder="Enter your last name" required>
+                        <input id="last-name" name="last-name" type="text" placeholder="Enter your last name" >
                     </label>
+                    <p class="error-message" aria-live="polite"></p>
                 </div>
-
+                
                 <div class="input-group">
                     <label for="dropdown">Gender
-                        <select id="dropdown" require>
+                        <select id="dropdown">
                             <option value="">(Please select one of the following)</option>
                             <option value="Female">Female</option>
                             <option value="Male">Male</option>
                             <option value="Preffered not to say">Preffered not to say</option>
                         </select>
                     </label>
+                    <p class="error-message" aria-live="polite"></p>
+                    <!-- Add a p element, shows text when input is invalid -->
                 </div>
                 <div class="input-group">
                     <label for="email" id="email-label">Email
-                        <input id="email" type="email" placeholder="Enter your email" required>
+                        <input id="email" name="email" type="email" placeholder="Enter your email" >
                     </label>
+                    <p class="error-message" aria-live="polite"></p>
+                    <!-- Add a p element, shows text when input is invalid -->
                 </div>
-
+                
                 <div class="input-group">
                     <label for="number" id="number-label">Phone Number
-                        <input id="number" type="number" placeholder="Enter your phone number" required>
+                        <input id="number" name="number" type="text" placeholder="Enter your phone number" min="4">
                     </label>
+                    <p class="error-message" aria-live="polite"></p>
+                    <!-- Add a p element, shows text when input is invalid -->
                 </div>
             </fieldset>
             <fieldset>
                 <p>Age Group</p>
                 <div class="age-group">
                     <div class="item-age-group">
-                        <label for="">
-                            <input type="radio" id="" name="age-group" class="inline" required>18 - 24
+                        <label for="18 - 24">
+                            <input type="radio" id="18 - 24" name="18 - 24" class="inline" >18 - 24
                         </label>
                     </div>
-
+                    
                     <div class="item-age-group">
-                        <label for="">
-                            <input type="radio" id="" name="age-group" class="inline" required>25 - 34
+                        <label for="25 - 34">
+                            <input type="radio" id="25 - 34" name="25 - 34" class="inline" >25 - 34
                         </label>
                     </div>
-
+                    
                     <div class="item-age-group">
-                        <label for="">
-                            <input type="radio" id="" name="age-group" class="inline" required>35 - 44
+                        <label for="35 - 44">
+                            <input type="radio" id="35 - 44" name="35 - 44" class="inline" >35 - 44
                         </label>
                     </div>
-
+                    
                     <div class="item-age-group">
-                        <label for="">
-                            <input type="radio" id="" name="age-group" class="inline" required>45 - 65
+                        <label for="45 - 65">
+                            <input type="radio" id="45 - 65" name="45 - 65" class="inline" >45 - 65
                         </label>
                     </div>
-
+                    
                     <div class="item-age-group">
-                        <label for="">
-                            <input type="radio" id="" name="age-group" class="inline" required>65 above
+                        <label for="65 above">
+                            <input type="radio" id="65 above" name="65 above" class="inline" >65 above
                         </label>
+                        <p class="error-message" aria-live="polite"></p>
+                        <!-- Add a p element, shows text when input is invalid -->
                     </div>
                 </div>
             </fieldset>
             <div class="input-group">
-                <label for="">
+                <label for="textarea">
                     Please enter your address.
                 </label>
-                <textarea>This is a text area</textarea><br><br>
+                <textarea id="textarea" placeholder="This is a text area"></textarea>
                 <input id="submit" type="submit">
+                <p class="error-message" aria-live="polite"></p>
+                <!-- Add a p element, shows text when input is invalid -->
             </div>
         </form>
     </div>
+    <script src="valid.js"></script>
 </body>
 </html>
