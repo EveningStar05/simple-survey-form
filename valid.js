@@ -1,14 +1,11 @@
-const form = document.querySelector("form")
-const set_default_msg = document.querySelector("span.error-message");
+const form = document.querySelector("form"); 
 
 function formValidation() {
     let text_input = document.querySelectorAll("input:not(#submit), select, textarea");
 
     for (let i = 0; i < text_input.length; i++) {
-        if (text_input[i].validity.valid) {
-            set_default_msg.textContent = "";
-        } else {
-            showError(text_input[i])
+        if (!text_input[i].validity.valid) {
+            showError(text_input[i]);
         }
     }
 }
@@ -34,6 +31,16 @@ function showError(element) {
             errorMessage.textContent = "You must fill in the blank field.";
         }
     }
+
+    if (element.name === "email") {
+        if (element.validity.typeMismatch) {
+            errorMessage.textContent = "That doesn't look like an email address."; 
+        }
+    }
+
+    element.addEventListener("input", (Event) => {
+        errorMessage.textContent = "";
+    })
 }
 
 form.addEventListener("submit", (Event) => {
